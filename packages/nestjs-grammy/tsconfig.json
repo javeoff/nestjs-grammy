@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "rootDir": "./lib",
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "es2017",
+    "strict": true,
+    "declaration": true,
+    "removeComments": false,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": false,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "noImplicitOverride": true,
+    "isolatedModules": false,
+    "esModuleInterop": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.js",
+  ],
+  "exclude": ["node_modules", "**/*.spec.ts", "dist"]
+}
