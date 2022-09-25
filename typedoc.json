@@ -1,0 +1,16 @@
+{
+  "entryPoints": ["entries", "packages"],
+  "entryPointStrategy": "expand",
+  "name": "Port Typedoc",
+  "out": "public/docs",
+  "tsconfig": "./tsconfig.json",
+  "exclude": [
+    "**/dist/**/*",
+    "**/node_modules/**/*",
+    "**/.next/**/*"
+  ],
+  "externalPattern": [
+    "**/packages/*/src/**",
+    "**/entries/*/src/**"
+  ]
+}
