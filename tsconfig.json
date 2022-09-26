@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "rootDir": "./lib",
+    "rootDir": "./packages/nestjs-grammy/src",
     "outDir": "./dist",
     "module": "commonjs",
     "target": "es2017",
@@ -17,6 +17,6 @@
     "isolatedModules": false,
     "esModuleInterop": true
   },
-  "include": ["lib/**/*"],
+  "include": ["packages/nestjs-grammy/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
