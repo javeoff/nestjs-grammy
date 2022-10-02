@@ -4,18 +4,23 @@
   "description": "A Grammy library providing nestjs integration",
   "author": "Daniil Jave",
   "license": "MIT",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./nestjs-grammy/dist/index.js",
+  "types": "./nestjs-grammy/dist/index.d.ts",
+  "scripts": {
+    "build": "npm run build:prepare && tsc",
+    "build:prepare": "rm -rf ./packages/nestjs-grammy/dist",
+    "commit:prepare": "husky install && sed -i 's@#!/bin/sh@#!/usr/bin/env bash@g' .husky/_/husky.sh && sed -i 's@sh -e@bash -e@g' .husky/_/husky.sh",
+    "typedoc": "typedoc",
+    "npm:publish": "npm publish"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/javeoff/nestjs-grammy.git"
   },
-  "scripts": {
-    "build": "tsc",
-    "prepare": "husky install && sed -i 's@#!/bin/sh@#!/usr/bin/env bash@g' .husky/_/husky.sh && sed -i 's@sh -e@bash -e@g' .husky/_/husky.sh",
-    "typedoc": "typedoc",
-    "npm:publish": "npm publish"
-  },
+  "workspaces": [
+    "examples/*",
+    "packages/*"
+  ],
   "contributors": [
     {
       "name": "Daniil Jave",

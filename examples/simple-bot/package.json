@@ -1,0 +1,21 @@
+{
+  "name": "simple-bot",
+  "version": "1.0.0",
+  "description": "",
+  "sideEffects": false,
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^9.1.2",
+    "@nestjs/core": "^9.1.2",
+    "@nestjs/platform-express": "^9.1.2",
+    "grammy": "^1.11.1",
+    "nestjs-grammy": "*",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^10.9.1"
+  }
+}

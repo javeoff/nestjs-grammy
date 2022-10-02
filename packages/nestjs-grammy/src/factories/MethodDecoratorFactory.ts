@@ -24,10 +24,11 @@ export class MethodDecoratorFactory {
           emitter: listenerType,
         };
 
-        const metadataMethods = Reflect.getMetadata(
-          MetadataName.LISTENER_METHODS,
-          descriptor?.value,
-        );
+        const metadataMethods =
+          Reflect.getMetadata(
+            MetadataName.LISTENER_METHODS,
+            descriptor?.value,
+          ) || [];
 
         Reflect.defineMetadata(
           MetadataName.LISTENER_METHODS,

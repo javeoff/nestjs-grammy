@@ -4,6 +4,6 @@ export { Command } from './listeners/Command';
 export { InlineQuery } from './listeners/InlineQuery';
 export { On } from './listeners/On';
 export { Api } from './params/Api';
-export { Context } from './params/Context';
+export { Ctx } from './params/Context';
 export { Message } from './params/Message';
 export { Sender } from './params/Sender';

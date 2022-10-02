@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "rootDir": "./packages/nestjs-grammy/src",
-    "outDir": "./packages/nestjs-grammy/dist",
     "module": "commonjs",
     "target": "es2017",
     "strict": true,
@@ -17,6 +15,4 @@
     "isolatedModules": false,
     "esModuleInterop": true
   },
-  "include": ["packages/nestjs-grammy/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts", "dist"]
 }

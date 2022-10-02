@@ -1,35 +1,8 @@
 {
   "name": "nestjs-grammy",
-  "version": "0.0.1",
-  "description": "A Grammy library providing nestjs integration",
-  "author": "Daniil Jave",
-  "license": "MIT",
-  "main": "dist/index.js",
   "sideEffects": false,
-  "type": "module",
-  "scripts": {
-    "prepare": "husky install && sed -i 's@#!/bin/sh@#!/usr/bin/env bash@g' .husky/_/husky.sh && sed -i 's@sh -e@bash -e@g' .husky/_/husky.sh",
-    "typedoc": "typedoc"
-  },
-  "contributors": [
-    {
-      "name": "Daniil Jave",
-      "email": "javeoff@gmail.com"
-    }
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/javeoff/nestjs-grammy"
-  },
-  "keywords": [
-    "grammy",
-    "nestjs",
-    "telegram",
-    "bot",
-    "telegram bot",
-    "nestjs bot",
-    "nest bot"
-  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "dependencies": {
     "@nestjs/common": "^9.1.2",
     "@nestjs/core": "^9.1.2",
